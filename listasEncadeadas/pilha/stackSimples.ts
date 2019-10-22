@@ -8,9 +8,8 @@ export class Pilha extends Linked{
             this.head = novoNode;
             this.tail = novoNode;
         } else {
-            novoNode.setNext(null);
-            this.tail.setNext(novoNode);
-            this.tail = novoNode;
+            novoNode.setNext(this.head);
+            this.head = novoNode;
         }
     }
 
