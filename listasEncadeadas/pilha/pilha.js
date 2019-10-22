@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var node_1 = require("../node");
+var stackSimples_1 = require("./stackSimples");
+var linked_1 = require("../linked");
+var stack1 = new stackSimples_1.Pilha();
+var linked = new linked_1.Linked();
+stack1.push(new node_1.No(9));
+stack1.push(new node_1.No(5));
+stack1.push(new node_1.No(4));
+stack1.push(new node_1.No(4));
+linked.reversePrint(stack1);
